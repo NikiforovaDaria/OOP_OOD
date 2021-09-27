@@ -21,12 +21,6 @@ export class Triangle extends Shape {
     getType = (): string => {
         const typesArr = ["equilateral triangle", "isosceles triangle", "scalene triangle"];
         const distanceArr = new Set(this.getDistanceArr());
-        
-        // console.log("🚀 ~ this.getDistanceArr()123", this.getDistanceArr().map(i => Math.floor(i)))
-
-        // console.log("🚀 ~ distanceArr", distanceArr)
-
-        // console.log("🚀 ~  distanceArr.size", distanceArr.size)
         return typesArr[distanceArr.size - 1];
     }
 
